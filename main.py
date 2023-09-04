@@ -1,10 +1,10 @@
 import random
 
-kort = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
+kort = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13" "14" "15", "A"]
 
 sum = 0
 while True:
-    num = random.randint(0, 12)
+    num = random.randint(0, 15)
 
     print(kort[num])
     if kort[num] == "2":
@@ -25,19 +25,23 @@ while True:
         sum = sum + 9
     elif kort[num] == "10":
         sum = sum + 10
-    elif kort[num] == "J":
-        sum = sum + 10
-    elif kort[num] == "Q":
-        sum = sum + 10
-    elif kort[num] == "K":
-        sum = sum + 10
-    elif kort[num] == "A":
+    elif kort[num] == "11":
         sum = sum + 11
+    elif kort[num] == "12":
+        sum = sum + 12
+    elif kort[num] == "13":
+        sum = sum + 13
+    elif kort[num] == "14":
+        sum = sum + 14
+    elif kort[num] == "15":
+        sum = sum + 15
+    elif kort[num] == "A":
+        sum = sum + 16
     print(sum)
-    if sum == 21:
-        print("Du fikk 21!!! Gratulerer")
+    if sum == 31:
+        print("Du fikk 31!!! Gratulerer")
         break
-    elif sum > 21:
+    elif sum > 31:
         print("Taper...")
         break
     print()
